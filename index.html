@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>🎉 Happy Birthday Dhwani! 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="confetti" id="confetti-container"></div>
+        
+        <header class="hero">
+            <div class="balloons">
+                <div class="balloon balloon-1">🎈</div>
+                <div class="balloon balloon-2">🎈</div>
+                <div class="balloon balloon-3">🎈</div>
+                <div class="balloon balloon-4">🎈</div>
+                <div class="balloon balloon-5">🎈</div>
+            </div>
+            
+            <h1 class="title">
+                <span class="happy">Happy Birthday</span>
+                <span class="birthday">Dhwani!</span>
+            </h1>
+            
+            <div class="cake">🎂</div>
+            
+            <p class="subtitle">Wishing you a day filled with happiness and a year filled with joy!</p>
+        </header>
+
+        <section class="celebration">
+            <div class="gift-box" onclick="openGift()">
+                <div class="gift" id="gift">
+                    🎁
+                    <span class="gift-text">Click me!</span>
+                </div>
+            </div>
+
+            <div class="birthday-message" id="message" style="display: none;">
+                <h2>🌟 Special Birthday Wishes 🌟</h2>
+                <p>May this special day bring you endless joy, wonderful surprises, and all the happiness your heart can hold!</p>
+                <div class="stars">✨ ⭐ 🌟 ✨ ⭐</div>
+            </div>
+        </section>
+
+        <section class="interactive-section">
+            <button class="celebration-btn" onclick="startCelebration()">
+                🎊 Start Celebration! 🎊
+            </button>
+            
+            <div class="game-control">
+                <button class="game-btn" onclick="startGame()">
+                    🎮 <span id="game-text">Play Game</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="game-section" id="game-section" style="display: none;">
+            <div class="game-container">
+                <h2>🎂 Birthday Balloon Pop Game! 🎈</h2>
+                <div class="game-info">
+                    <p>Score: <span id="game-score">0</span> | Time: <span id="game-timer">10</span>s</p>
+                </div>
+                <div class="game-area" id="game-area">
+                    <p class="game-instructions">Click the balloons as fast as you can! 🎈</p>
+                </div>
+                <div class="game-controls">
+                    <button class="game-action-btn" onclick="restartGame()">🔄 Restart</button>
+                    <button class="game-action-btn" onclick="closeGame()">❌ Close Game</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="wishes">
+            <div class="wish-card">
+                <h3>🎈 Birthday Wishes 🎈</h3>
+                <ul class="wishes-list">
+                    <li>May all your dreams come true</li>
+                    <li>Here's to another year of wonderful adventures</li>
+                    <li>Celebrate every moment of your special day</li>
+                    <li>May happiness follow you wherever you go</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <audio id="birthday-song" loop>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
